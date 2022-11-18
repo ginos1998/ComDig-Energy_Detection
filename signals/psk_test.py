@@ -7,7 +7,7 @@ fc = 5
 n_samples = 100
 
 msg = generate_rnd_message(n_samples)
-t, myPSK = generate_psk(A, fc, n_samples, msg, noise=False)
+t, myPSK = generate_psk(A, fc, n_samples, msg, noise=True)
 
 plt.plot(t, myPSK)
 plt.xlabel("t")

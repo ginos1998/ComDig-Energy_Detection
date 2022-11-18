@@ -68,7 +68,7 @@ def generate_psk(fc: int,
             psk = np.append(psk, A * np.sin(2 * np.pi * fc * t[i]) * -1)
 
     if noise:
-        psk = add_noise(msg, N)
+        psk = add_noise(psk, N)
 
     return t, psk
 
